@@ -23,14 +23,12 @@
     cursor: pointer;
 }
 
-
-
-header{
-    background-color: #FFF8F3;
-    background-image: url('images/header_bg.png'), url('images/developer.png');
+header {
+    background-color: #fff8f3;
+    background-image: url("images/header_bg.png"), url("images/developer.png");
     background-repeat: no-repeat;
-    background-position: 100% 100%, 0% 0%;
-    background-size: 50%, contain;
+    background-position: right bottom, left center;
+    background-size: 50%, 5%;
 }
 #navbar {
     display: flex;
@@ -59,36 +57,65 @@ header{
     border-radius: 6px;
 }
 
-
-#banner{
+#banner {
     display: flex;
     max-width: 80%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
 }
-#banner #left-content{
+#banner #left-content {
     width: 40%;
     display: flex;
     flex-direction: column;
-    gap: .7rem;
+    gap: 0.7rem;
 }
-#banner #left-content h3{
+#banner #left-content h3 {
     font-size: 1.8rem;
     color: rgba(0, 0, 0, 0.6);
 }
-#banner #left-content h1{
+#banner #left-content h1 {
     font-size: 3.5rem;
     color: rgba(0, 0, 0, 0.8);
 }
-#banner #left-content p{
+#banner #left-content p {
     color: rgba(0, 0, 0, 0.5);
     line-height: 1.5rem;
 }
-#banner #btn-container{
+#banner #btn-container {
     display: flex;
     gap: 1rem;
 }
-#banner > img{
+#banner > img {
     width: 40%;
+}
+
+
+main section{
+    margin: 8rem 0;
+}
+main #about-me{
+    width: 50%;
+    margin: 5rem auto;
+    background-color: #fff2e9;
+    padding: 6rem;
+}
+main #about-me > div{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 2rem;
+
+}
+main .common-paragraph{
+    margin: 1rem 0;
+    text-align: justify;
+    line-height: 1.5rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+main #about-me table{
+    margin: 0 auto;
+    border-spacing: .5rem;
+}
+main #about-me th,td{
+    padding-right: 1rem;
 }
