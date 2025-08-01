@@ -3,40 +3,92 @@
     padding: 0;
     font-family: sans-serif;
 }
-
-.common-btn{
+.common-btn {
     padding: 10px 20px;
     border: 1px solid transparent;
     border-radius: 6px;
     font-weight: 600;
-    background-color: #FD6E0A;
+    background-color: #fd6e0a;
     color: #ffffff;
+    cursor: pointer;
+}
+.secondary-btn {
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid #fd6e0a;
+    color: #fd6e0a;
     cursor: pointer;
 }
 
 
-#navbar{
+
+header{
+    background-color: #FFF8F3;
+    background-image: url('images/header_bg.png'), url('images/developer.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%, 0% 0%;
+    background-size: 50%, contain;
+}
+#navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 70%;
-    margin: 3rem auto;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
 }
-#navbar > span{
+#navbar > span {
     font-size: 1.5rem;
     font-weight: 800;
-    letter-spacing: .08rem;
+    letter-spacing: 0.08rem;
 }
-#navbar #nav-options{
+#navbar #nav-options {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
 }
-#navbar #nav-options a{
+#navbar #nav-options a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2px;
     border-radius: 6px;
+}
+
+
+#banner{
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#banner #left-content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+#banner #left-content h3{
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+#banner #left-content h1{
+    font-size: 3.5rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+#banner #left-content p{
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5rem;
+}
+#banner #btn-container{
+    display: flex;
+    gap: 1rem;
+}
+#banner > img{
+    width: 40%;
 }
